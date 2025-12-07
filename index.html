@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Simulado Interativo – Algoritmos e Lógica</title>
+<style>
+    body {
+        font-family: Arial;
+        margin: 30px;
+        background: #f7f7f7;
+    }
+    h1 { text-align: center; }
+    .question {
+        background: white;
+        padding: 15px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        border-left: 5px solid #0077cc;
+    }
+    button {
+        padding: 12px 20px;
+        font-size: 16px;
+        background: #0077cc;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        display: block;
+        margin: 25px auto;
+    }
+    button:hover { background: #005fa3; }
+    .result {
+        padding: 20px;
+        background: #fff;
+        border-radius: 8px;
+        margin-top: 20px;
+        border-left: 6px solid green;
+    }
+</style>
+</head>
+<body>
+
+<h1>Simulado Interativo – Algoritmos e Lógica</h1>
+
+<form id="quizForm">
+
+<!-- ======================= -->
+<!-- ===== QUESTÕES ======== -->
+<!-- ======================= -->
+
+<!-- 1 -->
+<div class="question">
+<p><b>1. O que é um algoritmo?</b></p>
+<input type="radio" name="q1" value="b"> Sequência lógica de passos para resolver um problema<br>
+<input type="radio" name="q1" value="a"> Código em C#<br>
+<input type="radio" name="q1" value="c"> Comando de entrada<br>
+<input type="radio" name="q1" value="d"> Operação matemática<br>
+</div>
+
+<!-- 2 -->
+<div class="question">
+<p><b>2. Em um algoritmo, “Leia” significa:</b></p>
+<input type="radio" name="q2" value="c"> Receber entrada do usuário<br>
+<input type="radio" name="q2" value="a"> Imprimir na tela<br>
+<input type="radio" name="q2" value="b"> Converter dados<br>
+<input type="radio" name="q2" value="d"> Terminar programa<br>
+</div>
+
+<!-- 3 -->
+<div class="question">
+<p><b>3. Estrutura correta do pseudocódigo:</b></p>
+<input type="radio" name="q3" value="c"> Início / Leia / Processamento / Escreva / Fim<br>
+<input type="radio" name="q3" value="a"> inicio / ação / pare<br>
+<input type="radio" name="q3" value="b"> leitura / processamento / término<br>
+<input type="radio" name="q3" value="d"> Start / Do / End<br>
+</div>
+
+<!-- 4 -->
+<div class="question">
+<p><b>4. O símbolo de decisão no fluxograma serve para:</b></p>
+<input type="radio" name="q4" value="c"> Verificar condições<br>
+<input type="radio" name="q4" value="a"> Entrada<br>
+<input type="radio" name="q4" value="b"> Saída<br>
+<input type="radio" name="q4" value="d"> Looping<br>
+</div>
+
+<!-- 5 -->
+<div class="question">
+<p><b>5. Qual é um valor booleano?</b></p>
+<input type="radio" name="q5" value="c"> True<br>
+<input type="radio" name="q5" value="a"> "Olá"<br>
+<input type="radio" name="q5" value="b"> 3.14<br>
+<input type="radio" name="q5" value="d"> 145<br>
+</div>
+
+<!-- 6 -->
+<div class="question">
+<p><b>6. Qual o tipo de “900”?</b></p>
+<input type="radio" name="q6" value="c"> string<br>
+<input type="radio" name="q6" value="a"> int<br>
+<input type="radio" name="q6" value="b"> float<br>
+<input type="radio" name="q6" value="d"> bool<br>
+</div>
+
+<!-- 7 -->
+<div class="question">
+<p><b>7. Qual nome de variável é válido?</b></p>
+<input type="radio" name="q7" value="c"> preco_total<br>
+<input type="radio" name="q7" value="a"> 2valor<br>
+<input type="radio" name="q7" value="b"> nome completo<br>
+<input type="radio" name="q7" value="d"> valor@pago<br>
+</div>
+
+<!-- 8 -->
+<div class="question">
+<p><b>8. A receita culinária é comparada ao algoritmo porque:</b></p>
+<input type="radio" name="q8" value="b"> Ambos seguem uma sequência lógica<br>
+<input type="radio" name="q8" value="a"> Têm ingredientes saborosos<br>
+<input type="radio" name="q8" value="c"> Usam C#<br>
+<input type="radio" name="q8" value="d"> Fazem cálculos complexos<br>
+</div>
+
+<!-- 9 -->
+<div class="question">
+<p><b>9. Em C#, o comando de saída é:</b></p>
+<input type="radio" name="q9" value="d"> Console.WriteLine()<br>
+<input type="radio" name="q9" value="a"> Console.ReadLine()<br>
+<input type="radio" name="q9" value="b"> Console.Show()<br>
+<input type="radio" name="q9" value="c"> Console.Write()<br>
+</div>
+
+<!-- 10 -->
+<div class="question">
+<p><b>10. Console.ReadLine() retorna:</b></p>
+<input type="radio" name="q10" value="b"> string<br>
+<input type="radio" name="q10" value="a"> int<br>
+<input type="radio" name="q10" value="c"> bool<br>
+<input type="radio" name="q10" value="d"> float<br>
+</div>
+
+<!-- 11 -->
+<div class="question">
+<p><b>11. Média de 8, 6 e 10:</b></p>
+<input type="radio" name="q11" value="d"> 6,67<br>
+<input type="radio" name="q11" value="a"> 8<br>
+<input type="radio" name="q11" value="b"> 24<br>
+<input type="radio" name="q11" value="c"> 3<br>
+</div>
+
+<!-- 12 -->
+<div class="question">
+<p><b>12. Pseudocódigo correto do dobro:</b></p>
+<input type="radio" name="q12" value="a"> Leia X / Resultado = X * 2<br>
+<input type="radio" name="q12" value="b"> Resultado = X + X + X<br>
+<input type="radio" name="q12" value="c"> Resultado = 2 - X<br>
+<input type="radio" name="q12" value="d"> Resultado = X / 2<br>
+</div>
+
+<!-- 13 -->
+<div class="question">
+<p><b>13. Área do retângulo:</b></p>
+<input type="radio" name="q13" value="b"> base * altura<br>
+<input type="radio" name="q13" value="a"> base / altura<br>
+<input type="radio" name="q13" value="c"> base + altura<br>
+<input type="radio" name="q13" value="d"> altura - base<br>
+</div>
+
+<!-- 14 -->
+<div class="question">
+<p><b>14. Perímetro do quadrado:</b></p>
+<input type="radio" name="q14" value="a"> P = L * 4<br>
+<input type="radio" name="q14" value="b"> P = L + 4<br>
+<input type="radio" name="q14" value="c"> P = L / 4<br>
+</div>
+
+<!-- 15 -->
+<div class="question">
+<p><b>15. Resultado da soma 7 + 3:</b></p>
+<input type="radio" name="q15" value="a"> 10<br>
+<input type="radio" name="q15" value="b"> 73<br>
+<input type="radio" name="q15" value="c"> 5<br>
+<input type="radio" name="q15" value="d"> erro<br>
+</div>
+
+<!-- 16 -->
+<div class="question">
+<p><b>16. O pseudocódigo converte:</b><br>C * 9/5 + 32</p>
+<input type="radio" name="q16" value="b"> Celsius → Fahrenheit<br>
+<input type="radio" name="q16" value="a"> Metros → Centímetros<br>
+<input type="radio" name="q16" value="c"> Soma valores<br>
+<input type="radio" name="q16" value="d"> Dobro<br>
+</div>
+
+<!-- 17 -->
+<div class="question">
+<p><b>17. Média de 20, 30 e 10:</b></p>
+<input type="radio" name="q17" value="b"> (20+30+10)/3<br>
+<input type="radio" name="q17" value="a"> 20+30+10<br>
+<input type="radio" name="q17" value="c"> 20*30*10<br>
+<input type="radio" name="q17" value="d"> 20/3<br>
+</div>
+
+<!-- 18 -->
+<div class="question">
+<p><b>18. Subtração correta:</b></p>
+<input type="radio" name="q18" value="b"> 15 - 4<br>
+<input type="radio" name="q18" value="a"> 4 - 15<br>
+<input type="radio" name="q18" value="c"> 15 + 4<br>
+</div>
+
+<!-- 19 -->
+<div class="question">
+<p><b>19. 6 × 5 = ?</b></p>
+<input type="radio" name="q19" value="b"> 30<br>
+<input type="radio" name="q19" value="a"> 11<br>
+<input type="radio" name="q19" value="c"> 65<br>
+<input type="radio" name="q19" value="d"> 56<br>
+</div>
+
+<!-- 20 -->
+<div class="question">
+<p><b>20. 20 ÷ 4 = ?</b></p>
+<input type="radio" name="q20" value="a"> 5<br>
+<input type="radio" name="q20" value="b"> 16<br>
+<input type="radio" name="q20" value="c"> 24<br>
+<input type="radio" name="q20" value="d"> 4<br>
+</div>
+
+<!-- 21 -->
+<div class="question">
+<p><b>21. Carro é novo quando ano é:</b></p>
+<input type="radio" name="q21" value="c"> 2021<br>
+<input type="radio" name="q21" value="a"> 2010<br>
+<input type="radio" name="q21" value="b"> 2020<br>
+<input type="radio" name="q21" value="d"> 1999<br>
+</div>
+
+<!-- 22 -->
+<div class="question">
+<p><b>22. Resultado do algoritmo (X = 9):</b></p>
+<input type="radio" name="q22" value="d"> -2<br>
+<input type="radio" name="q22" value="a"> 14<br>
+<input type="radio" name="q22" value="b"> 9<br>
+<input type="radio" name="q22" value="c"> 2<br>
+</div>
+
+<!-- 23 -->
+<div class="question">
+<p><b>23. Primeira condição do reajuste:</b></p>
+<input type="radio" name="q23" value="b"> SA < 500<br>
+<input type="radio" name="q23" value="a"> SA <= 1000<br>
+<input type="radio" name="q23" value="c"> SA > 1000<br>
+</div>
+
+<!-- 24 -->
+<div class="question">
+<p><b>24. Se SA = 800, reajuste:</b></p>
+<input type="radio" name="q24" value="b"> 10%<br>
+<input type="radio" name="q24" value="a"> 15%<br>
+<input type="radio" name="q24" value="c"> 5%<br>
+</div>
+
+<!-- 25 -->
+<div class="question">
+<p><b>25. Se SA = 1500, reajuste:</b></p>
+<input type="radio" name="q25" value="c"> 5%<br>
+<input type="radio" name="q25" value="a"> 15%<br>
+<input type="radio" name="q25" value="b"> 10%<br>
+</div>
+
+<!-- 26 -->
+<div class="question">
+<p><b>26. MÊS = 3 imprime:</b></p>
+<input type="radio" name="q26" value="b"> Março<br>
+<input type="radio" name="q26" value="a"> Abril<br>
+<input type="radio" name="q26" value="c"> Fevereiro<br>
+<input type="radio" name="q26" value="d"> Inválido<br>
+</div>
+
+<!-- 27 -->
+<div class="question">
+<p><b>27. MÊS = 15 imprime:</b></p>
+<input type="radio" name="q27" value="b"> Inválido<br>
+<input type="radio" name="q27" value="a"> Outubro<br>
+<input type="radio" name="q27" value="c"> Janeiro<br>
+<input type="radio" name="q27" value="d"> Dezembro<br>
+</div>
+
+<!-- 28 -->
+<div class="question">
+<p><b>28. Switch correto:</b></p>
+<input type="radio" name="q28" value="c"> switch (mes) { case 1: Console.WriteLine("Janeiro"); break; }<br>
+<input type="radio" name="q28" value="a"> switch (mes) { case 1: Console.WriteLine("Janeiro"); }<br>
+<input type="radio" name="q28" value="b"> switch mes<br>
+<input type="radio" name="q28" value="d"> if (mes == 1)<br>
+</div>
+
+<!-- 29 -->
+<div class="question">
+<p><b>29. If correto em C#:</b></p>
+<input type="radio" name="q29" value="b"> if (A > 10) Console.WriteLine("OK");<br>
+<input type="radio" name="q29" value="a"> if A > 10<br>
+<input type="radio" name="q29" value="c"> if A > 10 then<br>
+</div>
+
+<!-- 30 -->
+<div class="question">
+<p><b>30. Ler número digitado:</b></p>
+<input type="radio" name="q30" value="c"> int X = int.Parse(Console.ReadLine());<br>
+<input type="radio" name="q30" value="a"> int X = Console.ReadLine();<br>
+<input type="radio" name="q30" value="b"> X = Read.Int();<br>
+<input type="radio" name="q30" value="d"> int X = Console.Write();<br>
+</div>
+
+</form>
+
+<button onclick="corrigir()">Corrigir Prova</button>
+
+<div id="resultado"></div>
+
+<script>
+// Gabarito
+const gabarito = {
+    q1:"b", q2:"c", q3:"c", q4:"c", q5:"c",
+    q6:"c", q7:"c", q8:"b", q9:"d", q10:"b",
+    q11:"d", q12:"a", q13:"b", q14:"a", q15:"a",
+    q16:"b", q17:"b", q18:"b", q19:"b", q20:"a",
+    q21:"c", q22:"d", q23:"b", q24:"b", q25:"c",
+    q26:"b", q27:"b", q28:"c", q29:"b", q30:"c"
+};
+
+function corrigir() {
+    let total = 30;
+    let acertos = 0;
+    let detalhes = "<h2>Resultado:</h2>";
+
+    for (let i = 1; i <= total; i++) {
+        let resposta = document.querySelector(`input[name="q${i}"]:checked`);
+
+        if (!resposta) {
+            detalhes += `<p><b>Questão ${i}:</b> não respondida ❌</p>`;
+            continue;
+        }
+
+        if (resposta.value === gabarito[`q${i}`]) {
+            acertos++;
+            detalhes += `<p><b>Questão ${i}:</b> correta ✅</p>`;
+        } else {
+            detalhes += `<p><b>Questão ${i}:</b> errada ❌ (Correta: ${gabarito[`q${i}`]})</p>`;
+        }
+    }
+
+    document.getElementById("resultado").innerHTML =
+        `<div class='result'><h2>Você acertou ${acertos} de ${total}.</h2>${detalhes}</div>`;
+}
+</script>
+
+</body>
+</html>
